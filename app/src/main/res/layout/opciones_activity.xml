@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="176dp"
+        android:layout_height="184dp"
+        app:layout_constraintBottom_toTopOf="@+id/id_encriptacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/configuraciones" />
+
+    <Button
+        android:id="@+id/id_encriptacion"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Activar/Desactivar Encriptación"
+        app:layout_constraintBottom_toTopOf="@+id/id_Enviarcorreo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/id_Enviarcorreo"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Enviar correo"
+        app:layout_constraintBottom_toTopOf="@+id/id_CERRAR_SESION"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_encriptacion" />
+
+    <Button
+        android:id="@+id/id_CERRAR_SESION"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Cerrar Sesion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_Enviarcorreo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
